@@ -16,7 +16,7 @@ public class AlwaysSuccessfulMailSenderMock extends MailSender {
         return true;
     }
 
-    public boolean hasSentMailTo(String receiver) {
+    public boolean hasSendMailTo(String receiver) {
         return receivers.contains(receiver);
     }
 }

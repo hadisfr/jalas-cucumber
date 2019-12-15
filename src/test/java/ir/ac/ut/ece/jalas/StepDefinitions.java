@@ -49,6 +49,6 @@ public class StepDefinitions {
 
     @When("a mail notification should be sent to {}")
     public void aMailNotificationShouldBeSentTo(String receiver) {
-        Assertions.assertTrue(mailSenderMock.hasSentMailTo(receiver));
+        Assertions.assertTrue(mailSenderMock.hasSendMailTo(receiver));
     }
 }
